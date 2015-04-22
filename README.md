@@ -1,0 +1,2 @@
+# 基于spark大数据平台写的一些简单例子
+关于spark平台的Streaming、sql、sparkMllib、spark写的一些简单的demo程序
