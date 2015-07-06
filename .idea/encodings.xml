@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/BuildTrainSet.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/BuyCar.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/DataToMap.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/GetDataByData.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/ItemActive.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/MovieLensALS.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/MovieLensALSDemo.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/MySort.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/ReadFile.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/UserBehavior.scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/scala/org/nita/sparkExample/tianchi/UserItemBehaviorSet.scala" charset="UTF-8" />
+  </component>
 </project>
 

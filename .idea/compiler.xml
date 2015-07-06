@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="sparkexample" />
+        <module name="zeromq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

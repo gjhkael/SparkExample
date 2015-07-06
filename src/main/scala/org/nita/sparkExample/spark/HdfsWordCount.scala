@@ -10,12 +10,12 @@ object HdfsWordCount {
       System.err.println("Usage: HdfsTest <file>")
       System.exit(1)
     }
-    val sparkConf = new SparkConf().setAppName("HdfsTest").setMaster("local[4]")
+    val sparkConf = new SparkConf().setAppName("HdfsTest").setMaster(args(0))
                                     .set("spark.driver.allowMultipleContexts","true")
                                    
     val sc = new SparkContext(sparkConf)
 
-    val file = sc.textFile(args(0))       //如果是本地文件：file:///home/havstack/xxx  如果是HDFS：hdfs://slave2:9000/data/test/xxx
+    val file = sc.textFile(args(1))       //如果是本地文件：file:///home/havstack/xxx  如果是HDFS：hdfs://slave2:9000/data/test/xxx
 
     val result = file.flatMap(_.split(" ")).map(x => (x, 1)).reduceByKey(_ + _).cache() //map reduce操作
 

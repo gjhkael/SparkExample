@@ -16,9 +16,9 @@ object IntersectionTest {
       val b=sc.parallelize(List(1,2,5,6), 2)         //2为partition的个数
       var r=a.intersection(b)          //求a和b的交集
       a.foreach(x=>println(x))          //将每个数打印出来
-      a.foreachWith(i=>i)((x,i)=>println("[aIndex"+i+"]"+x))  //其中i为partition的编号，x为位于该partition的值
-      b.foreach(x=>println(x))  
-      b.foreachWith(i=>i)((x,i)=>println("[aIndex"+i+"]"+x)) 
+      a.foreachWith(i=>i)((x,i)=>println("[aIndex"+i+"]"+x))    //其中i为partition的编号，x为位于该partition的值
+      b.foreach(x=>println(x))
+      b.foreachWith(i=>i)((x,i)=>println("[aIndex"+i+"]"+x))
       r.foreach(x=>println(x))  
       r.foreachWith(i=>i)((x,i)=>println("[aIndex"+i+"]"+x)) 
       println(r.toDebugString)    //将r的RDD调用过程打印出来
