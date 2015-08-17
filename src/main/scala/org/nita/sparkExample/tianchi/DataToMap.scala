@@ -1,6 +1,6 @@
 package org.nita.sparkExample.tianchi
 
-import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.{SparkConf, SparkContext}
 
 /**
  * Created by havstack on 4/8/15.

@@ -1,12 +1,9 @@
 package org.nita.sparksql
 
-import org.apache.spark.SparkConf
-import org.apache.spark.SparkContext
-import java.sql.DriverManager
-import java.sql.SQLException
-import scala.reflect.io.Streamable.Bytes
+import java.sql.{DriverManager, ResultSet}
+
+import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.rdd.JdbcRDD
-import java.sql.ResultSet
 
 object SparkSqlFromMysql {
 	def main(args:Array[String]){

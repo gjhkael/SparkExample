@@ -1,11 +1,11 @@
 package org.nita.kael
 
-import org.apache.spark.streaming.receiver.Receiver
-import org.apache.spark.storage.StorageLevel
-import org.apache.spark.Logging
+import java.io.{BufferedReader, InputStreamReader}
 import java.net.Socket
-import java.io.BufferedReader
-import java.io.InputStreamReader
+
+import org.apache.spark.Logging
+import org.apache.spark.storage.StorageLevel
+import org.apache.spark.streaming.receiver.Receiver
 
 class CustomReceiver(host: String, port: Int)
   extends Receiver[String](StorageLevel.MEMORY_AND_DISK_2) with Logging {

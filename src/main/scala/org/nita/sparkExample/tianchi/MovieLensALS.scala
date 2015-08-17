@@ -3,17 +3,17 @@ package org.nita.sparkExample.tianchi
 import java.io.File
 
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.SparkContext._
 import org.apache.spark.mllib.recommendation.{ALS, MatrixFactorizationModel, Rating}
 import org.apache.spark.rdd._
+import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.io.Source
 
 object MovieLensALS {
   def main(args: Array[String]) {
 
-    Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
+    Logger.getLogger("spark.examples").setLevel(Level.WARN)
     Logger.getLogger("org.eclipse.jetty.server").setLevel(Level.OFF)
 
     if (args.length != 3) {

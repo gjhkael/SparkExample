@@ -2,8 +2,8 @@ package org.nita.sparkExample.spark
 /**
  * Created by gjh on 3/17/15.
  */
+import org.apache.spark.SparkContext._
 import org.apache.spark._
-import SparkContext._
 object HdfsWordCount {
  def main(args: Array[String]) {
     if (args.length < 1) {

@@ -1,10 +1,5 @@
 package org.nita.sparkExample.spark
-import org.apache.spark.SparkConf
-import org.apache.spark.SparkContext
-import scala.collection.mutable.LinkedList
-import scala.collection.SortedMap
-import scala.collection.mutable.ListBuffer
-import scala.collection.immutable.Queue
+import org.apache.spark.{SparkConf, SparkContext}
 object IntersectionTest {
   def main(args: Array[String]) {
       val sparkConf = new SparkConf().setAppName("IntersectionTest").setMaster("local[4]")

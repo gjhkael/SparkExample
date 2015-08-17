@@ -1,17 +1,14 @@
 package org.nita.MLlib
 import java.util.Random
-import org.apache.log4j.Logger
-import org.apache.log4j.Level
-import scala.io.Source
-import scopt.OptionParser
-import org.apache.spark.SparkConf
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
-import org.apache.spark.rdd._
-import org.apache.spark.mllib.recommendation.{ALS, Rating, MatrixFactorizationModel}
-import org.apache.spark.serializer.KryoRegistrator
+
 import com.esotericsoftware.kryo.Kryo
-import org.apache.spark.serializer.KryoSerializer
+import org.apache.log4j.{Level, Logger}
+import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.SparkContext._
+import org.apache.spark.mllib.recommendation.{ALS, MatrixFactorizationModel, Rating}
+import org.apache.spark.rdd._
+import org.apache.spark.serializer.{KryoRegistrator, KryoSerializer}
+import scopt.OptionParser
 
 object MovieRecommendation {
 	class ALSRegistrator extends KryoRegistrator{
@@ -70,7 +67,7 @@ object MovieRecommendation {
 	    }
 	}
 	def run(params:Params){
-		Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
+		Logger.getLogger("spark.examples").setLevel(Level.WARN)
 		Logger.getLogger("org.eclipse.jetty.server").setLevel(Level.OFF)
 		
 		val conf=new SparkConf().setAppName(s"MovieLensALS with $params")

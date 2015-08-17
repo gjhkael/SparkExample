@@ -1,14 +1,11 @@
 package org.nita.kael
 
 //import org.apache.spark.examples.streaming.StreamingExamples
-import org.apache.spark.streaming.{ Seconds, StreamingContext }
-import org.apache.spark.streaming.StreamingContext._
-import org.apache.spark.storage.StorageLevel
-import org.apache.spark.SparkConf
-import org.apache.spark.streaming.Milliseconds
-import org.apache.spark.SparkContext
-
 import java.io.File
+
+import org.apache.spark.SparkConf
+import org.apache.spark.streaming.StreamingContext._
+import org.apache.spark.streaming.{Seconds, StreamingContext}
 object CustomWordcount {
 
   def main(args: Array[String]) {
